@@ -43,9 +43,9 @@ def get_data(soup):
     '''
     result_block = soup.find_all('div', attrs={'class': 'g'})
     df_dict = {
-        "Title": [],
-        "Description": [],
-        "Link": []
+        "title": [],
+        "description": [],
+        "link": []
     }
     for result in result_block:
         if(len(result['class']) != 1):
